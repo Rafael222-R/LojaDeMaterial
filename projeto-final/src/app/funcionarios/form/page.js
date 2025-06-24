@@ -124,6 +124,7 @@ export default function funcionariosFormPage() {
 
 
   return (
+    <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
     <Pagina titulo={'Cadastro de Funcionario'}>
 
       <Formik
@@ -446,5 +447,6 @@ export default function funcionariosFormPage() {
       </Formik>
 
     </Pagina>
+    </div>
   )
 }

@@ -77,6 +77,7 @@ export default function ProdutosformPage(props) {
     })
 
     return (
+        <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
         <Pagina titulo={'Edição de Produtos'}>
 
             <Formik
@@ -259,5 +260,6 @@ export default function ProdutosformPage(props) {
             </Formik>
 
         </Pagina>
+        </div>
     )
 }

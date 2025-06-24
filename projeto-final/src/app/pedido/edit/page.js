@@ -141,6 +141,7 @@ export default function PedidoEditPage(props) {
   }
 
   return (
+    <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
     <Pagina titulo={'Editar Pedido'}>
       <Formik
         initialValues={initialValues}
@@ -278,5 +279,6 @@ export default function PedidoEditPage(props) {
         )}
       </Formik>
     </Pagina>
+    </div>
   );
 }

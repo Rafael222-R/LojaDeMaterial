@@ -98,6 +98,7 @@ export default function pedidoFormPage() {
     })
 
     return (
+        <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
         <Pagina titulo={'Pedido'}>
             <Formik
                 initialValues={initialValues}
@@ -211,5 +212,6 @@ export default function pedidoFormPage() {
                 )}
             </Formik>
         </Pagina>
+        </div>
     );
 }

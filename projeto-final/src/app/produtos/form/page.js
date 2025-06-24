@@ -73,6 +73,7 @@ export default function ProdutosformPage() {
 
 
     return (
+        <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
         <Pagina titulo={'Cadastro de Produtos'}>
 
             <Formik
@@ -245,5 +246,6 @@ export default function ProdutosformPage() {
             </Formik>
 
         </Pagina>
+        </div>
     )
 }

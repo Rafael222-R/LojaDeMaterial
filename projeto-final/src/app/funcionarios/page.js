@@ -47,6 +47,7 @@ function excluir(funcionario) {
   
 }
   return (
+    <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
     <Pagina titulo={'Funcionario'}>
 
         <div className='text-end mb-2'> 
@@ -93,5 +94,6 @@ function excluir(funcionario) {
 
 
     </Pagina>
+    </div>
   )
 }

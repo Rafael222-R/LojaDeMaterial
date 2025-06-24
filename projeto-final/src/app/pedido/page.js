@@ -38,6 +38,7 @@ export default function PedidoPage() {
   }
 
   return (
+    <div style={{ background: 'linear-gradient(to bottom, #6ab7f5, #fff)', minHeight: '100vh', padding: '20px' }}>
     <Pagina titulo="Carrinho de Compras">
       <div className="text-end mb-2">
         <Button href="/pedido/form">
@@ -80,5 +81,6 @@ export default function PedidoPage() {
         </tbody>
       </Table>
     </Pagina>
+  </div>
   )
 }
