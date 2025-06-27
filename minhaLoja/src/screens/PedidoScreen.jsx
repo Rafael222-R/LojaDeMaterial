@@ -13,7 +13,7 @@ export default function PedidoScreen() {
 
   useEffect(() => {
     axios
-      .get("http://192.168.2.104:3000/funcionarios")
+      .get("http://10.30.33.35:3000/funcionarios")
       .then((res) => {
         
         setFuncionarios(res.data);
@@ -25,7 +25,7 @@ export default function PedidoScreen() {
 
   useEffect(() => {
     axios
-      .get("http://192.168.2.104:3000/clientes")
+      .get("http://10.30.33.35:3000/clientes")
       .then((res) => {
        
         setclientes(res.data);
@@ -36,7 +36,7 @@ export default function PedidoScreen() {
   }, []);
   useEffect(() => {
     axios
-      .get("http://192.168.2.104:3000/produtos")
+      .get("http://10.30.33.35:3000/produtos")
       .then((res) => {
         
         setProdutos(res.data);

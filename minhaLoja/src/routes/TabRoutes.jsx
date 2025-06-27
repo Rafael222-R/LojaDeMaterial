@@ -5,6 +5,8 @@ import {Ionicons } from '@expo/vector-icons'
 import PedidoScreen from '../screens/PedidoScreen'
 import StackRoutes from './StackRoutes'
 
+import CargoFormScreen from '../screens/cargo/form/CargoFormScreen.jsx'
+
 const Tab = createBottomTabNavigator()
 export default function Tabroutes() {
   return (
@@ -30,6 +32,22 @@ export default function Tabroutes() {
       )
     }}
     />
+
+<Tab.Screen 
+    name='CargoFromScreen'
+    component={CargoFormScreen}
+    options={{
+      title: "Orçamento",
+      tabBarIcon: ({color, size}) => (
+        <Ionicons name="clipboard" color={color} size={size} />
+      )
+    }}
+    />
+
+
+
+
+  
 
     
   </Tab.Navigator>

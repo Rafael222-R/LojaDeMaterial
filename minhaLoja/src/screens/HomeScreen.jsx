@@ -8,7 +8,7 @@ export default function HomeScreen({ navigation, route }) {
 
   useEffect(() => {
     axios
-      .get("http://192.168.2.104:3000/produtos?delay=2000")
+      .get("http://10.30.33.35:3000/produtos?delay=2000")
       .then((res) => {
         setProdutos(res.data);
       })

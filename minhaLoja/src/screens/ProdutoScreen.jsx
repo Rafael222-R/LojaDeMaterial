@@ -10,7 +10,7 @@ const id = route.params.id
 const [produtoId, setProdutoId] =useState({})
 
 useEffect(() => {
-    axios.get(`http://192.168.2.104:3000/produtos/${id}` )
+    axios.get(`http://10.30.33.35:3000/produtos/${id}` )
     .then((res) => {
         setProdutoId(res.data)
     })

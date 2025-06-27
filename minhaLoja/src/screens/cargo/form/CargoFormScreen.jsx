@@ -12,7 +12,7 @@ export default function CargoScreen() {
     habilidade: "",
     status_cargo: "",
     departamento: "",
-    nivel_hieraquico: "",
+    nivel_hierarquico: "",
     data_criacao: "",
   });
   const formatDate = (brDate) => {
@@ -24,12 +24,12 @@ export default function CargoScreen() {
     console.log(CargoForm);
 
     axios
-      .post("http://192.168.2.104:3000/cargos", CargoForm)
+      .post("http://10.30.33.35:3000/cargos", CargoForm)
       .then((res) => {
         console.log(res);
       })
       .catch((err) => {
-        console.log(err);
+        console.log(err.response);
       });
 
     const dadosCorrigidos = {
@@ -119,13 +119,13 @@ export default function CargoScreen() {
 
       <TextInput
         label="Nivel Hierarquico"
-        value={CargoForm.nivel_hieraquico}
+        value={CargoForm.nivel_hierarquico}
         mode="flat"
         render={() => (
           <Picker
-            selectedValue={CargoForm.nivel_hieraquico}
+            selectedValue={CargoForm.nivel_hierarquico}
             onValueChange={(itemValue) =>
-              setCargoForm({ ...CargoForm, nivel_hieraquico: itemValue })
+              setCargoForm({ ...CargoForm, nivel_hierarquico: itemValue })
             }
             /* style={styles.pickerInsideTextInput} */
           >
